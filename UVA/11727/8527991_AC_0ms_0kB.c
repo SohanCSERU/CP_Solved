@@ -1,0 +1,19 @@
+#include<stdio.h>
+int main()
+{
+int a,b,c,d,ans,j;
+scanf("%d",&d);
+for(j=1;j<=d;j++)
+ {
+     scanf("%d%d%d",&a,&b,&c);
+     if(a>b && b>c || a<b && b<c)
+     ans=b;
+     if(a>c && c>b || a<c && c<b)
+     ans=c;
+     if(b>a && a>c || b<a && a<c)
+     ans=a;
+ printf("Case %d: %d\n",j,ans);
+ }
+
+return 0;
+}
